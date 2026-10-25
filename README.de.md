@@ -1,4 +1,4 @@
-﻿Languages: English (README.en.txt) | Italiano (README.it.txt) | Español (README.es.txt) | Français (README.fr.txt) | Deutsch (README.de.txt)
+﻿Languages: [English](README.md) | [Italiano](README.it.md) | [Español](README.es.md) | [Français](README.fr.md) | Deutsch
 
 CUTITO - YouTube-Video herunterladen, zuschneiden und in MP4 umwandeln
 ======================================================================

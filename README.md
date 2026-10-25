@@ -2,7 +2,7 @@
 
 ![Cutito logo](cutito.png)
 
-**Language:** English | [Italiano](README.it.txt) | [Español](README.es.txt) | [Français](README.fr.txt) | [Deutsch](README.de.txt)
+**Language:** English | [Italiano](README.it.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md)
 
 Cutito is a small Windows app that downloads a YouTube video, trims the part you
 want, and converts it to MP4 (H.264). It opens in a dedicated browser window and

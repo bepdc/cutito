@@ -382,7 +382,7 @@ def start():
     if s is not None and e is not None and e <= s:
         return jsonify(error="The end must be after the start.", code="end_before_start"), 400
     if not shutil.which("ffmpeg"):
-        return jsonify(error="ffmpeg not found. Install it (see README.en.txt) and restart.", code="no_ffmpeg"), 400
+        return jsonify(error="ffmpeg not found. Install it (see README.en.md) and restart.", code="no_ffmpeg"), 400
 
     try:
         height = int(d.get("height", 720))
