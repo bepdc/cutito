@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14161a">
+<title>Cutito</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+  :root {
+    --bg: #14161a; --card: #1d2026; --line: #2d323b; --txt: #e8eaee; --mut: #9097a3;
+    --acc: #4f8cff; --ok: #3ecf8e; --err: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--txt);
+         font: 16px/1.45 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px 60px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+  .logo { width: 64px; height: 64px; flex: none; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+  h1 { font-size: 26px; margin: 0 0 2px; }
+  .lang { margin-left: auto; align-self: flex-start; width: auto; padding: 6px 8px; font-size: 13px; }
+  p.sub { color: var(--mut); margin: 0; font-size: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  label { display: block; font-size: 13px; color: var(--mut); margin: 14px 0 6px; }
+  label:first-child { margin-top: 0; }
+  input[type=text], select {
+    width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line);
+    background: #12141a; color: var(--txt); font: inherit;
+  }
+  input:focus, select:focus { outline: 2px solid var(--acc); outline-offset: -1px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .check { display: flex; align-items: center; gap: 8px; margin-top: 16px; color: var(--txt); font-size: 14px; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; border: 0; padding: 11px 16px; }
+  #go { width: 100%; margin-top: 20px; background: var(--acc); color: #fff; font-weight: 600; }
+  #go:disabled { opacity: .5; cursor: not-allowed; }
+  .sec { background: transparent; border: 1px solid var(--line); color: var(--txt); }
+  #status { margin-top: 20px; display: none; }
+  .bar { height: 8px; background: #12141a; border-radius: 99px; overflow: hidden; border: 1px solid var(--line); }
+  .bar > div { height: 100%; width: 0; background: var(--acc); transition: width .3s; }
+  .bar.indet > div { width: 40%; animation: slide 1.1s infinite ease-in-out; }
+  @keyframes slide { 0% { margin-left: -40%; } 100% { margin-left: 100%; } }
+  #msg { margin: 10px 0 0; font-size: 14px; white-space: pre-wrap; }
+  #msg.err { color: var(--err); }
+  #msg.ok { color: var(--ok); }
+  #info { margin: 6px 0 0; font-size: 13px; color: var(--mut); }
+  #info.warn { color: #ffb454; }
+  #log { margin: 4px 0 0; font: 12px/1.4 Consolas, monospace; color: var(--mut);
+         word-break: break-all; min-height: 1.4em; }
+  .actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .actions a { text-decoration: none; background: var(--ok); color: #06210f; font-weight: 600;
+               padding: 11px 16px; border-radius: 8px; }
+  small { color: var(--mut); display: block; margin-top: 6px; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="logo" role="img" aria-label="Cutito">
+  <!-- palette: white · black #1c1c24 · pink #f3a8bd · blue #6f9bd1 -->
+  <clipPath id="tileL"><rect x="12" y="12" width="488" height="488" rx="112"/></clipPath>
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="#fff"/>
+
+  <g stroke="#1c1c24" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" fill="#fff">
+    <!-- round body -->
+    <circle cx="256" cy="338" r="136"/>
+    <!-- ears -->
+    <path d="M146 150 L150 52 L232 100 Z"/>
+    <path d="M366 150 L362 52 L280 100 Z"/>
+    <!-- head -->
+    <ellipse cx="256" cy="172" rx="122" ry="98"/>
+  </g>
+
+  <!-- cheeks -->
+  <circle cx="168" cy="216" r="19" fill="#f3a8bd"/>
+  <circle cx="344" cy="216" r="19" fill="#f3a8bd"/>
+  <!-- eyes -->
+  <circle cx="206" cy="190" r="9.5" fill="#1c1c24"/>
+  <circle cx="306" cy="190" r="9.5" fill="#1c1c24"/>
+  <!-- whiskers -->
+  <g stroke="#1c1c24" stroke-width="7" stroke-linecap="round">
+    <path d="M152 204 L92 190"/><path d="M150 222 L88 226"/><path d="M154 240 L98 260"/>
+    <path d="M360 204 L420 190"/><path d="M362 222 L424 226"/><path d="M358 240 L414 260"/>
+  </g>
+
+  <!-- scissors in top-front perspective -->
+  <g clip-path="url(#tileL)">
+    <path d="M247.2 373.7 L204.9 389.1 L126.1 498.2 L263.0 405.4 L264.9 378.4 Z" fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M247.2 373.7 L204.9 389.1 L126.1 498.2 L263.0 405.4 L264.9 378.4 Z" fill="#fff" stroke="#1c1c24" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M247.1 378.4 L249.0 405.4 L385.9 498.2 L307.1 389.1 L264.8 373.7 Z" fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M247.1 378.4 L249.0 405.4 L385.9 498.2 L307.1 389.1 L264.8 373.7 Z" fill="#fff" stroke="#1c1c24" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M256.0 376.0 L305.6 329.3" stroke="#fff" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L305.6 329.3" stroke="#6f9bd1" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L206.4 329.3" stroke="#fff" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L206.4 329.3" stroke="#6f9bd1" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <ellipse cx="305.6" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#fff" stroke-width="28"/>
+    <ellipse cx="305.6" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#6f9bd1" stroke-width="14"/>
+    <ellipse cx="206.4" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#fff" stroke-width="28"/>
+    <ellipse cx="206.4" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#6f9bd1" stroke-width="14"/>
+    <circle cx="256.0" cy="376.0" r="9" fill="#1c1c24"/>
+  </g>
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="none" stroke="#dfe3ea" stroke-width="4"/>
+</svg>
+
+    <div>
+      <h1>Cutito</h1>
+      <p class="sub" data-i="sub"></p>
+    </div>
+  <select id="lang" class="lang" aria-label="Language"></select>
+  </div>
+
+  <div class="card">
+    <label for="url" data-i="url"></label>
+    <input id="url" type="text" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off">
+
+    <div class="row">
+      <div>
+        <label for="start" data-i="start"></label>
+        <input id="start" type="text" data-ph="start_ph">
+      </div>
+      <div>
+        <label for="end" data-i="end"></label>
+        <input id="end" type="text" data-ph="end_ph">
+      </div>
+    </div>
+    <small data-i="hint"></small>
+
+    <div class="row">
+      <div>
+        <label for="height" data-i="res"></label>
+        <select id="height">
+          <option value="480">480p</option>
+          <option value="720" selected data-i="res_rec"></option>
+          <option value="1080">1080p</option>
+        </select>
+      </div>
+      <div>
+        <label for="crf" data-i="crf"></label>
+        <select id="crf">
+          <option value="23" data-i="crf_hi"></option>
+          <option value="26" selected data-i="crf_mid"></option>
+          <option value="30" data-i="crf_lo"></option>
+        </select>
+      </div>
+    </div>
+
+    <label for="name" data-i="name"></label>
+    <input id="name" type="text" data-ph="name_ph">
+
+    <label class="check"><input id="audio" type="checkbox"> <span data-i="audio"></span></label>
+
+    <button id="go" data-i="go"></button>
+
+    <div id="status">
+      <div class="bar" id="bar"><div></div></div>
+      <p id="msg"></p>
+      <p id="info"></p>
+      <p id="log"></p>
+      <div class="actions" id="actions"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+// --- Languages: it, en, es, fr, de. The choice is saved in the browser; English by default.
+const I18N = {
+  it: { _name: "Italiano",
+    sub: "Incolla il link, scegli il pezzo che ti serve, ottieni un MP4 pronto da analizzare.",
+    url: "Link YouTube", start: "Inizio (mm:ss)", start_ph: "vuoto = dall'inizio", end: "Fine (mm:ss)", end_ph: "vuoto = fino alla fine",
+    hint: "Formati ok: 90, 1:30, 01:02:03. Un round alla volta = analisi più precisa.",
+    res: "Risoluzione massima", res_rec: "720p (consigliata)", crf: "Qualità / peso", crf_hi: "Alta (file più grosso)", crf_mid: "Media", crf_lo: "Leggera (file più piccolo)",
+    name: "Nome file (opzionale)", name_ph: "es. finale_round1", audio: "Tieni l'audio (di default viene tolto)", go: "Scarica e converti",
+    starting: "Parto...", queued: "In coda...", downloading: "Scarico il video da YouTube...", converting: "Converto in MP4 H.264...",
+    done: "Fatto: {file} ({mb} MB)", dl_mp4: "Scarica MP4", open_folder: "Apri cartella output",
+    elapsed: "Trascorso {t}", eta: "ETA ~{t}", eta_na: "ETA non disponibile", on_disk: "{mb} MB su disco", track: "traccia {n} (la % riparte da 0)", no_change: "nessun cambiamento da {s}s",
+    lost: "Ho perso il collegamento con l'app: si è chiusa. Riaprila e riprova.", unknown_error: "Errore sconosciuto",
+    bad_url: "Link non valido: deve iniziare con http:// o https://", end_before_start: "La fine deve essere dopo l'inizio.",
+    no_ffmpeg: "ffmpeg non trovato. Installalo (vedi README.it.txt) e riavvia.", bad_params: "Parametri non validi.",
+    bad_time: "Tempo non valido: '{arg}' (usa mm:ss, hh:mm:ss o secondi)", ytdlp_failed: "yt-dlp ha fallito:\n{arg}",
+    no_file: "Download finito ma non trovo il file scaricato.", ffmpeg_failed: "ffmpeg ha fallito:\n{arg}" },
+  en: { _name: "English",
+    sub: "Paste the link, pick the part you need, get an MP4 ready to analyse.",
+    url: "YouTube link", start: "Start (mm:ss)", start_ph: "empty = from the beginning", end: "End (mm:ss)", end_ph: "empty = until the end",
+    hint: "Valid formats: 90, 1:30, 01:02:03. One round at a time = more precise analysis.",
+    res: "Maximum resolution", res_rec: "720p (recommended)", crf: "Quality / size", crf_hi: "High (bigger file)", crf_mid: "Medium", crf_lo: "Light (smaller file)",
+    name: "File name (optional)", name_ph: "e.g. final_round1", audio: "Keep the audio (removed by default)", go: "Download and convert",
+    starting: "Starting...", queued: "Queued...", downloading: "Downloading the video from YouTube...", converting: "Converting to MP4 H.264...",
+    done: "Done: {file} ({mb} MB)", dl_mp4: "Download MP4", open_folder: "Open output folder",
+    elapsed: "Elapsed {t}", eta: "ETA ~{t}", eta_na: "ETA not available", on_disk: "{mb} MB on disk", track: "track {n} (the % restarts from 0)", no_change: "no change for {s}s",
+    lost: "Lost the connection with the app: it has closed. Reopen it and try again.", unknown_error: "Unknown error",
+    bad_url: "Invalid link: it must start with http:// or https://", end_before_start: "The end must be after the start.",
+    no_ffmpeg: "ffmpeg not found. Install it (see README.en.txt) and restart.", bad_params: "Invalid parameters.",
+    bad_time: "Invalid time: '{arg}' (use mm:ss, hh:mm:ss or seconds)", ytdlp_failed: "yt-dlp failed:\n{arg}",
+    no_file: "Download finished but the downloaded file can't be found.", ffmpeg_failed: "ffmpeg failed:\n{arg}" },
+  es: { _name: "Español",
+    sub: "Pega el enlace, elige el fragmento que necesitas y obtén un MP4 listo para analizar.",
+    url: "Enlace de YouTube", start: "Inicio (mm:ss)", start_ph: "vacío = desde el principio", end: "Fin (mm:ss)", end_ph: "vacío = hasta el final",
+    hint: "Formatos válidos: 90, 1:30, 01:02:03. Un asalto cada vez = análisis más preciso.",
+    res: "Resolución máxima", res_rec: "720p (recomendada)", crf: "Calidad / peso", crf_hi: "Alta (archivo más grande)", crf_mid: "Media", crf_lo: "Ligera (archivo más pequeño)",
+    name: "Nombre del archivo (opcional)", name_ph: "p. ej. final_asalto1", audio: "Conservar el audio (por defecto se quita)", go: "Descargar y convertir",
+    starting: "Empezando...", queued: "En cola...", downloading: "Descargando el vídeo de YouTube...", converting: "Convirtiendo a MP4 H.264...",
+    done: "Listo: {file} ({mb} MB)", dl_mp4: "Descargar MP4", open_folder: "Abrir carpeta de salida",
+    elapsed: "Transcurrido {t}", eta: "ETA ~{t}", eta_na: "ETA no disponible", on_disk: "{mb} MB en disco", track: "pista {n} (el % vuelve a 0)", no_change: "sin cambios desde hace {s}s",
+    lost: "Se perdió la conexión con la aplicación: se ha cerrado. Ábrela de nuevo e inténtalo otra vez.", unknown_error: "Error desconocido",
+    bad_url: "Enlace no válido: debe empezar por http:// o https://", end_before_start: "El final debe ser posterior al inicio.",
+    no_ffmpeg: "ffmpeg no encontrado. Instálalo (véase README.es.txt) y reinicia.", bad_params: "Parámetros no válidos.",
+    bad_time: "Tiempo no válido: '{arg}' (usa mm:ss, hh:mm:ss o segundos)", ytdlp_failed: "yt-dlp ha fallado:\n{arg}",
+    no_file: "La descarga terminó pero no encuentro el archivo descargado.", ffmpeg_failed: "ffmpeg ha fallado:\n{arg}" },
+  fr: { _name: "Français",
+    sub: "Colle le lien, choisis le passage qu'il te faut, obtiens un MP4 prêt à analyser.",
+    url: "Lien YouTube", start: "Début (mm:ss)", start_ph: "vide = depuis le début", end: "Fin (mm:ss)", end_ph: "vide = jusqu'à la fin",
+    hint: "Formats valides : 90, 1:30, 01:02:03. Un round à la fois = analyse plus précise.",
+    res: "Résolution maximale", res_rec: "720p (recommandée)", crf: "Qualité / poids", crf_hi: "Haute (fichier plus gros)", crf_mid: "Moyenne", crf_lo: "Légère (fichier plus petit)",
+    name: "Nom du fichier (facultatif)", name_ph: "ex. finale_round1", audio: "Garder l'audio (supprimé par défaut)", go: "Télécharger et convertir",
+    starting: "Démarrage...", queued: "En attente...", downloading: "Téléchargement de la vidéo depuis YouTube...", converting: "Conversion en MP4 H.264...",
+    done: "Terminé : {file} ({mb} Mo)", dl_mp4: "Télécharger le MP4", open_folder: "Ouvrir le dossier de sortie",
+    elapsed: "Écoulé {t}", eta: "ETA ~{t}", eta_na: "ETA indisponible", on_disk: "{mb} Mo sur le disque", track: "piste {n} (le % repart de 0)", no_change: "aucun changement depuis {s}s",
+    lost: "Connexion perdue avec l'application : elle s'est fermée. Rouvre-la et réessaie.", unknown_error: "Erreur inconnue",
+    bad_url: "Lien invalide : il doit commencer par http:// ou https://", end_before_start: "La fin doit être après le début.",
+    no_ffmpeg: "ffmpeg introuvable. Installe-le (voir README.fr.txt) et redémarre.", bad_params: "Paramètres invalides.",
+    bad_time: "Temps invalide : '{arg}' (utilise mm:ss, hh:mm:ss ou des secondes)", ytdlp_failed: "yt-dlp a échoué :\n{arg}",
+    no_file: "Téléchargement terminé mais le fichier téléchargé est introuvable.", ffmpeg_failed: "ffmpeg a échoué :\n{arg}" },
+  de: { _name: "Deutsch",
+    sub: "Link einfügen, gewünschten Abschnitt wählen, fertiges MP4 zur Analyse erhalten.",
+    url: "YouTube-Link", start: "Start (mm:ss)", start_ph: "leer = ab Anfang", end: "Ende (mm:ss)", end_ph: "leer = bis zum Ende",
+    hint: "Gültige Formate: 90, 1:30, 01:02:03. Eine Runde nach der anderen = genauere Analyse.",
+    res: "Maximale Auflösung", res_rec: "720p (empfohlen)", crf: "Qualität / Größe", crf_hi: "Hoch (größere Datei)", crf_mid: "Mittel", crf_lo: "Leicht (kleinere Datei)",
+    name: "Dateiname (optional)", name_ph: "z. B. finale_runde1", audio: "Ton behalten (standardmäßig entfernt)", go: "Herunterladen und konvertieren",
+    starting: "Start...", queued: "In der Warteschlange...", downloading: "Video wird von YouTube heruntergeladen...", converting: "Konvertierung in MP4 H.264...",
+    done: "Fertig: {file} ({mb} MB)", dl_mp4: "MP4 herunterladen", open_folder: "Ausgabeordner öffnen",
+    elapsed: "Vergangen {t}", eta: "ETA ~{t}", eta_na: "ETA nicht verfügbar", on_disk: "{mb} MB auf der Platte", track: "Spur {n} (die % beginnen bei 0)", no_change: "seit {s}s keine Änderung",
+    lost: "Verbindung zur App verloren: Sie wurde geschlossen. Neu öffnen und erneut versuchen.", unknown_error: "Unbekannter Fehler",
+    bad_url: "Ungültiger Link: er muss mit http:// oder https:// beginnen.", end_before_start: "Das Ende muss nach dem Start liegen.",
+    no_ffmpeg: "ffmpeg nicht gefunden. Installieren (siehe README.de.txt) und neu starten.", bad_params: "Ungültige Parameter.",
+    bad_time: "Ungültige Zeit: '{arg}' (mm:ss, hh:mm:ss oder Sekunden verwenden)", ytdlp_failed: "yt-dlp ist fehlgeschlagen:\n{arg}",
+    no_file: "Download beendet, aber die heruntergeladene Datei wurde nicht gefunden.", ffmpeg_failed: "ffmpeg ist fehlgeschlagen:\n{arg}" },
+};
+function pickLang() {
+  try { const s = localStorage.getItem("cutito_lang"); if (s && I18N[s]) return s; } catch (e) {}
+  return "en";  // English by default; the choice is remembered
+}
+let LANG = pickLang();
+function t(k, v) {
+  let s = (I18N[LANG][k] ?? I18N.en[k] ?? k);
+  for (const x in (v || {})) s = s.split("{" + x + "}").join(v[x]);
+  return s;
+}
+// server message -> chosen language (if it has a code), otherwise the original text
+function srv(j) { return j.code && I18N.en[j.code] ? t(j.code, { arg: j.arg || "" }) : (j.msg || j.error || t("unknown_error")); }
+function applyLang() {
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-i]").forEach(e => { e.textContent = t(e.dataset.i); });
+  document.querySelectorAll("[data-ph]").forEach(e => { e.placeholder = t(e.dataset.ph); });
+  $("lang").value = LANG;
+  const a = document.querySelector("#actions a"), o = $("open");
+  if (a) a.textContent = t("dl_mp4");
+  if (o) o.textContent = t("open_folder");
+}
+
+(function () {
+  const sel = $("lang");
+  for (const k in I18N) { const o = document.createElement("option"); o.value = k; o.textContent = I18N[k]._name; sel.appendChild(o); }
+  sel.addEventListener("change", () => { LANG = sel.value; try { localStorage.setItem("cutito_lang", LANG); } catch (e) {} applyLang(); });
+})();
+const H = { "Content-Type": "application/json", "X-Cutito": "1" };
+let timer = null;
+let lastKey = "", lastChange = Date.now();
+
+// --- Link with the app: while the window is open it sends a "heartbeat".
+// When the window is closed, the app is notified (and shuts down if it is idle).
+const TOKEN = "__TOKEN__";
+const CID = Math.random().toString(36).slice(2) + Date.now().toString(36);
+function ping() { fetch("/api/ping?c=" + CID, { method: "POST", headers: H }).catch(() => {}); }
+ping();
+setInterval(ping, 3000);
+window.addEventListener("pageshow", ping);
+window.addEventListener("pagehide", () => {
+  try { navigator.sendBeacon("/api/bye?t=" + TOKEN + "&c=" + CID); } catch (e) {}
+});
+
+function fmtTime(s) {
+  const m = Math.floor(s / 60), r = s % 60;
+  return m + ":" + String(r).padStart(2, "0");
+}
+
+function setMsg(text, cls) { const m = $("msg"); m.textContent = text; m.className = cls || ""; }
+
+function setBar(pct) {
+  const bar = $("bar");
+  if (pct === null || pct === undefined) { bar.classList.add("indet"); return; }
+  bar.classList.remove("indet");
+  bar.firstElementChild.style.width = pct + "%";
+}
+
+$("go").addEventListener("click", async () => {
+  $("status").style.display = "block";
+  $("actions").innerHTML = "";
+  setBar(0); setMsg(t("starting"));
+  $("info").textContent = ""; $("info").className = ""; $("log").textContent = "";
+  lastKey = ""; lastChange = Date.now();
+  $("go").disabled = true;
+
+  const body = {
+    url: $("url").value, start: $("start").value, end: $("end").value,
+    height: $("height").value, crf: $("crf").value,
+    audio: $("audio").checked, name: $("name").value,
+  };
+
+  try {
+    const r = await fetch("/api/start", { method: "POST", headers: H, body: JSON.stringify(body) });
+    const j = await r.json();
+    if (!r.ok) throw new Error(srv(j));
+    poll(j.id);
+  } catch (e) {
+    setMsg(e.message, "err"); $("go").disabled = false;
+  }
+});
+
+function poll(id) {
+  clearInterval(timer);
+  timer = setInterval(async () => {
+    try {
+      const r = await fetch("/api/status/" + id, { headers: H });
+      const j = await r.json();
+      if (j.stage === "error") {
+        clearInterval(timer); setBar(0); setMsg(srv(j), "err"); $("go").disabled = false; return;
+      }
+      if (j.stage === "done") {
+        clearInterval(timer); setBar(100);
+        setMsg(t("done", { file: j.filename, mb: j.size_mb }), "ok");
+        $("actions").innerHTML =
+          '<a href="/api/file/' + id + '">' + t("dl_mp4") + '</a>' +
+          '<button class="sec" id="open">' + t("open_folder") + '</button>';
+        $("open").onclick = () => fetch("/api/open-folder", { method: "POST", headers: H });
+        $("go").disabled = false; return;
+      }
+      // Animated bar when there is no real percentage (e.g. download with cutting)
+      const hasPct = j.progress !== null && j.progress !== undefined && j.progress > 0;
+      setBar(hasPct ? j.progress : null);
+      setMsg(srv(j) + (hasPct ? " " + Math.round(j.progress) + "%" : ""));
+
+      // What changes between checks? If nothing for a while, say so.
+      const key = [j.bytes_mb, j.progress, j.last_line].join("|");
+      if (key !== lastKey) { lastKey = key; lastChange = Date.now(); }
+      const still = Math.round((Date.now() - lastChange) / 1000);
+
+      let info = t("elapsed", { t: fmtTime(j.elapsed) });
+      if (j.eta !== null && j.eta !== undefined) info += " · " + t("eta", { t: fmtTime(j.eta) });
+      else if (j.elapsed > 8) info += " · " + t("eta_na");
+      if (j.speed) info += " · " + j.speed;
+      if (j.stage === "download") {
+        info += " · " + t("on_disk", { mb: j.bytes_mb });
+        if (j.track >= 2) info += " · " + t("track", { n: j.track });
+      }
+      if (still > 45) info += " · " + t("no_change", { s: still });
+      $("info").textContent = info;
+      $("info").className = still > 45 ? "warn" : "";
+      $("log").textContent = j.last_line || "";
+    } catch (e) {
+      clearInterval(timer); setMsg(t("lost"), "err");
+      $("go").disabled = false;
+    }
+  }, 1000);
+}
+applyLang();
+</script>
+</body>
+</html>

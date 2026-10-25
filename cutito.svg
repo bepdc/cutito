@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- palette: white · black #1c1c24 · pink #f3a8bd · blue #6f9bd1 -->
+  <clipPath id="tile"><rect x="12" y="12" width="488" height="488" rx="112"/></clipPath>
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="#fff"/>
+
+  <g stroke="#1c1c24" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" fill="#fff">
+    <!-- round body -->
+    <circle cx="256" cy="338" r="136"/>
+    <!-- ears -->
+    <path d="M146 150 L150 52 L232 100 Z"/>
+    <path d="M366 150 L362 52 L280 100 Z"/>
+    <!-- head -->
+    <ellipse cx="256" cy="172" rx="122" ry="98"/>
+  </g>
+
+  <!-- cheeks -->
+  <circle cx="168" cy="216" r="19" fill="#f3a8bd"/>
+  <circle cx="344" cy="216" r="19" fill="#f3a8bd"/>
+  <!-- eyes -->
+  <circle cx="206" cy="190" r="9.5" fill="#1c1c24"/>
+  <circle cx="306" cy="190" r="9.5" fill="#1c1c24"/>
+  <!-- whiskers -->
+  <g stroke="#1c1c24" stroke-width="7" stroke-linecap="round">
+    <path d="M152 204 L92 190"/><path d="M150 222 L88 226"/><path d="M154 240 L98 260"/>
+    <path d="M360 204 L420 190"/><path d="M362 222 L424 226"/><path d="M358 240 L414 260"/>
+  </g>
+
+  <!-- scissors in top-front perspective -->
+  <g clip-path="url(#tile)">
+    <path d="M247.2 373.7 L204.9 389.1 L126.1 498.2 L263.0 405.4 L264.9 378.4 Z" fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M247.2 373.7 L204.9 389.1 L126.1 498.2 L263.0 405.4 L264.9 378.4 Z" fill="#fff" stroke="#1c1c24" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M247.1 378.4 L249.0 405.4 L385.9 498.2 L307.1 389.1 L264.8 373.7 Z" fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M247.1 378.4 L249.0 405.4 L385.9 498.2 L307.1 389.1 L264.8 373.7 Z" fill="#fff" stroke="#1c1c24" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M256.0 376.0 L305.6 329.3" stroke="#fff" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L305.6 329.3" stroke="#6f9bd1" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L206.4 329.3" stroke="#fff" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <path d="M256.0 376.0 L206.4 329.3" stroke="#6f9bd1" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <ellipse cx="305.6" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#fff" stroke-width="28"/>
+    <ellipse cx="305.6" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#6f9bd1" stroke-width="14"/>
+    <ellipse cx="206.4" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#fff" stroke-width="28"/>
+    <ellipse cx="206.4" cy="329.3" rx="32.2" ry="18.5" fill="#fff" stroke="#6f9bd1" stroke-width="14"/>
+    <circle cx="256.0" cy="376.0" r="9" fill="#1c1c24"/>
+  </g>
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="none" stroke="#dfe3ea" stroke-width="4"/>
+</svg>
